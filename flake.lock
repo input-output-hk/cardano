@@ -15355,16 +15355,16 @@
     "offchain-metadata-tools": {
       "flake": false,
       "locked": {
-        "lastModified": 1679016345,
-        "narHash": "sha256-I/M2t7K1Kjlpu0uf3BEwnGFoqR6VX72rhq1peiaEv84=",
+        "lastModified": 1684160858,
+        "narHash": "sha256-2pu/T4uoXBxhI47PrOS6zHRZRwaSM6qA87HJySwwIBo=",
         "owner": "input-output-hk",
         "repo": "offchain-metadata-tools",
-        "rev": "7777fbda679fedd43fa90beeb1595be430154a02",
+        "rev": "a68c12b10fe5ed9802defb4a6ca80919b695d945",
         "type": "github"
       },
       "original": {
         "owner": "input-output-hk",
-        "ref": "pg-cli-mods",
+        "ref": "refs/pull/57/head",
         "repo": "offchain-metadata-tools",
         "type": "github"
       }
