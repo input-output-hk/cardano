@@ -109,7 +109,7 @@ def getPParams():
     return "pparams.json"
 
 def estimateFeeTx(txbody, txin_count, txout_count, pparams):
-    cmd = ["cardano-cli", "transaction", "calculate-min-fee", "--tx-in-count", str(txin_count), "--tx-out-count", str(txout_count), "--witness-count", "1", "--protocol-params-file", pparams, "--tx-body-file", txbody]
+    cmd = ["cardano-cli", "transaction", "calculate-min-fee", *network_args,  "--tx-in-count", str(txin_count), "--tx-out-count", str(txout_count), "--witness-count", "1", "--protocol-params-file", pparams, "--tx-body-file", txbody]
     p = subprocess.run(cmd, capture_output=True, text=True)
     if p.returncode != 0:
         print(cmd)
