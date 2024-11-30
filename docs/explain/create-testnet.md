@@ -1,4 +1,8 @@
-# Generate genesis files and keys
+# GenSTAKE_POOL_DIR=workbench/pools \
+ENV_NAME=preview \
+START_INDEX=1 \
+NUM_POOLS=3 \
+nix run .\#x86_64-linux.automation.jobs.gen-custom-kv-config-poolserate genesis files and keys
 ```
 IOHK_NIX=$(nix eval --raw --impure --expr '(builtins.getFlake (toString ./.)).inputs.iohk-nix.outPath')
 TEMPLATE_DIR="$IOHK_NIX/cardano-lib/testnet-template" \
